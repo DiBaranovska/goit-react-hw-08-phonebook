@@ -33,6 +33,10 @@ const Register = () => {
 
   const formSubmit = event => {
     event.preventDefault();
+    if (event.target.password.value.length < 7) {
+      toast.error('Error, the minimum number of values ​​in the password is 7');
+      return;
+    }
     const data = {
       name: event.target.name.value,
       email: event.target.email.value,

@@ -10,6 +10,7 @@ const UserMenu = () => {
   const { user } = useSelector(userSelector);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const handleLogOut = () => {
     dispatch(logOutThunk())
       .unwrap()
@@ -19,6 +20,7 @@ const UserMenu = () => {
       })
       .catch(() => {
         toast.error('Error');
+        navigate('/login');
       });
   };
   return (
