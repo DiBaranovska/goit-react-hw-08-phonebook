@@ -1,0 +1,8 @@
+.contacts_list {
+  margin: 20px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}

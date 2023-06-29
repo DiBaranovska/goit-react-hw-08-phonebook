@@ -1,0 +1,15 @@
+.registr_form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.registr_input {
+  margin-bottom: 10px;
+}
+
+.registr_button {
+  width: 100px;
+  margin-left: auto;
+}

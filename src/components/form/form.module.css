@@ -1,0 +1,22 @@
+.form {
+  margin: 15px 15px 30px 15px;
+  width: 516px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.form__input:not(:last-child) {
+  margin-right: 15px;
+}
+
+.form__input {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.form__btn {
+  width: 100px;
+  margin-left: auto;
+  cursor: pointer;
+}

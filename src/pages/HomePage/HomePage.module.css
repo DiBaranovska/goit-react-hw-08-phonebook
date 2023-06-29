@@ -1,0 +1,33 @@
+@keyframes anim {
+  from {
+    right: 105%;
+    color: white;
+  }
+  80% {
+    right: 3%;
+  }
+  90% {
+    right: 6%;
+  }
+  to {
+    right: 5%;
+    color: #1976d2;
+  }
+}
+
+.homePage_container {
+  background-image: url('../../img/main_img.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.homePage_title {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  padding-top: 30px;
+  font-size: 50px;
+  animation: anim 5s ease-in-out both;
+}

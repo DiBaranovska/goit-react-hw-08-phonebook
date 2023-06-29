@@ -1,0 +1,17 @@
+.contacts_filter {
+  text-align: center;
+}
+
+.contacts__name {
+  margin-bottom: 15px;
+  width: 200px;
+  color: rgb(118, 118, 118);
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.contacts__input {
+  margin-bottom: 15px;
+  width: 200px;
+  outline: none;
+}
