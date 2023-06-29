@@ -1,6 +1,10 @@
+import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { userSelector } from '../redux/selectors';
 import { Navigate } from 'react-router-dom';
+
+
+
 const PrivateRoure = ({ children }) => {
   const { isLoggedIn } = useSelector(userSelector);
 
@@ -8,3 +12,7 @@ const PrivateRoure = ({ children }) => {
 };
 
 export default PrivateRoure;
+
+PrivateRoure.propTypes = {
+  children: PropTypes.element.isRequired,
+};
