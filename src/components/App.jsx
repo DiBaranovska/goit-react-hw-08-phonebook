@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast';
 const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 const Register = lazy(() => import('../pages/Register/Register'));
 const Login = lazy(() => import('../pages/Login/Login'));
+const ErrorPage = lazy(() => import('../pages/ErrorPage/ErrorPage'));
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
               </PublicRoute>
             }
           />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </>
